@@ -1,9 +1,11 @@
-const decodeCharacter = (character) => {
+const decodeCharacter = (char) => {
   const rotShifter = 13;
-  if (!character.match(/[A-Z]/)) return character;
+  if (!char.match(/[A-Z]/)) return char;
 
-  if (character.charCodeAt() >= 78) return String.fromCharCode((character.charCodeAt() - rotShifter));
-  return String.fromCharCode((character.charCodeAt() + rotShifter));
+  if (char.charCodeAt() >= 78) 
+    return String.fromCharCode((char.charCodeAt() - rotShifter));
+  else 
+    return String.fromCharCode((char.charCodeAt() + rotShifter));
 };
 
 
