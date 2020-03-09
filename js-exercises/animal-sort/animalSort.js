@@ -5,7 +5,6 @@ function compareFunctionForAnimals(animal1, animal2) {
 }
 const animalSort = animals => {
   animals.sort(compareFunctionForAnimals);
-  console.log(animals);
   return animals;
 };
 
